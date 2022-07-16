@@ -2,8 +2,8 @@
 
 ## Learning Goals
 
-- Validate input using regular expressions.
-- Search for patterns using regular expressions.
+- Validate that strings match specific patterns using regular expressions.
+- Search for strings that match specific patterns using regular expressions.
 
 ***
 
@@ -19,13 +19,25 @@ any common characters to pattern match. Also called a **filter**.
 
 ## Conclusion
 
-You've learned a lot in this module:
+Regular expressions can be tricky, but there are many tools that will help you
+craft patterns to check that strings match important patterns (like email
+addresses and phone numbers) and search for these types of strings in massive
+walls of text. We learned that:
 
-- One sentence summary of lesson 1.
-- One sentence summary of lesson 2.
+- There is a near-universal regular expression language that stems from PERL.
+- There are online tools to check your regular expression patterns as you go,
+  such as [regex101][regex101].
+- RegExes in Python are managed using the `re` module in the Python standard
+  library.
+- `search()`, `match()`, and `fullmatch()` return a single `re.Match` object if
+  your RegEx pattern has a match in the search string.
+- `findall()` returns a list of matching strings in the search string.
+- `split()` and `sub()` can be used to modify strings where there are matches
+  for a RegEx pattern.
 
-Conclusion summary paragraph. Include common misconceptions and what students
-will be able to do moving forward.
+We didn't cover everything about regular expressions in this module- there are
+many nuances that you will learn throughout your software career. Make sure to
+revisit regular expressions _regularly_ to keep building your skills.
 
 ***
 
@@ -33,5 +45,7 @@ will be able to do moving forward.
 
 - [Python 3 Documentation](https://docs.python.org/3/)
 - [re - Regular expression operations - Python](https://docs.python.org/3/library/re.html)
-- [regex101](https://regex101.com/)
+- [regex101][regex101]]
 - [Python Regular Expressions - Google for Education](https://developers.google.com/edu/python/regular-expressions)
+
+[regex101]: https://regex101.com
